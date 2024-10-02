@@ -17,3 +17,11 @@
   
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
 </p>
+
+## Hito 1: Repositorio de prácticas y definición del proyecto
+
+<p align="justify">
+  En este hito se ha creado el proyecto y se ha explicado el tema de la aplicación objetivo, indicando los distintos milestones e issues, así como el lenguaje que se utilizará durante el desarrollo de la aplicación.
+
+  Para acceder a la información sobre el hito 1 pulse aquí.
+</p>
