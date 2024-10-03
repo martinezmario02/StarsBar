@@ -1,5 +1,11 @@
 # Hito 1: Repositorio de prácticas y definición del proyecto
 
+## Descripción del problema
+
+<p align="justify">
+  En la actualidad, muchos usuarios desean obtener información sobre los restaurantes a los que desean ir (mediante valoraciones y reseñas). Este tipo de servicio requiere un sistema capaz de manejar una gran cantidad de datos en tiempo real, asegurando que los usuarios puedan añadir y consultar valoraciones de manera cómoda y sin incidentes.
+</p>
+
 ## StarsBar
 
 <img src="https://github.com/user-attachments/assets/17ce8bae-f4b7-434e-bb4b-ec007a032e69" alt="StarsBar logo" style="width:150px; height:150px; border-radius:50%; border: 2px solid #ccc;"/>
