@@ -21,7 +21,15 @@
   - Crear listas personalizadas con tus restaurantes favoritos.
   - Añadir tu propio negocio, aportando imágenes, carta, etc.
 
-  Para la implementación de la aplicación, se utilizará Typescript, pues facilita la gestión de proyectos a gran escala, mejorando la calidad del código y la experiencia de desarrollo.
+  Para la implementación de la aplicación, se utilizará Typescript junto al framework Vue.js, pues facilita la gestión de proyectos a gran escala, mejorando la calidad del código y la experiencia de desarrollo.
   
-  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"> <img alt="Vue.js" src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vue-dot-js&logoColor=%234FC08D"/>
+
+  ## Configuración del entorno
+
+  Respecto a la configuración, ya había configurado GitHub anteriormente utilizando una clave SSH, tal y como puede verse en la siguientes capturas de pantalla.
+  
+  ![Captura perfil](https://github.com/user-attachments/assets/297c9c2c-0431-460f-b030-0ea0dcc8692c)
+
+  ![Captura terminal](https://github.com/user-attachments/assets/cc366929-d5d9-410f-8e70-e7558799d030)
 </p>
