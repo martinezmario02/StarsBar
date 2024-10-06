@@ -7,6 +7,7 @@ interface Props {
     image: string; 
   };
 }
+
 const props = defineProps<Props>();
 </script>
 
