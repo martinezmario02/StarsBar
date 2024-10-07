@@ -3,10 +3,9 @@ import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import RestaurantItem from './RestaurantItem.vue';
 
-// Crear una referencia para almacenar la lista de restaurantes
 const restaurants = ref([]);
 
-// Función que se ejecuta cuando el componente se monta
+// Get restaurants:
 onMounted(async () => {
   try {
     const response = await axios.get('http://localhost:3000/api/restaurants');
