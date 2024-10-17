@@ -26,7 +26,7 @@ const login = async () => {
       authenticated.value = true;
       showLogin.value = false;
       name.value = response.data.name;
-      store.dispatch('login', response.data.id);
+      store.dispatch('login', { userId: response.data.id, rol: response.data.rol });
       mail.value = '';
       pass.value = '';
       loginError.value = ''; 
@@ -61,7 +61,7 @@ const logout = () => {
     </div>
 
     <div class="absolute top-5 right-5">
-      <div v-if="!authenticated">
+      <div v-if="!authenticated" class="text-center">
         <button @click="toggleLoginForm" class="bg-white hover:bg-gray-300 text:bg-headerColor font-bold py-2 px-4 rounded">Iniciar sesión</button>
         <p class="text-white">¿Aún no estás registrado?</p>
         <router-link to="/register" class="text-white font-bold underline hover:text-yellow-400">Regístrate aquí</router-link>

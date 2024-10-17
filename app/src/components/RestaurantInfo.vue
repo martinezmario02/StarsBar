@@ -4,9 +4,10 @@
       <img :src="`http://localhost:3000${restaurant?.image}`" alt="Restaurant Image" class="w-full h-64 object-cover rounded-lg shadow-md" />
       <h2 class="text-2xl font-bold mt-4">{{ restaurant?.name }}</h2>
       <p class="text-gray-700 mt-1">{{ restaurant?.location }}</p>
+      <p class="text-gray-700 mt-1">Valoración: {{ restaurant?.average_rating }}</p>
     </div>
 
-    <div v-if="isLoggedIn" class="max-w-md mx-auto mb-6">
+    <div v-if="isLoggedIn && !isAdmin" class="max-w-md mx-auto mb-6">
       <form @submit.prevent="submitReview" class="p-4 border border-gray-300 rounded">
         <h3 class="text-lg font-bold mb-3">Añadir Valoración</h3>
 
@@ -41,7 +42,7 @@
 
     <h3 class="text-xl text-center font-bold mb-2 mt-6">Valoraciones</h3>
     <div class="w-3/4 mx-auto">
-      <div v-if="reviews.length === 0" class="text-gray-500 text-center">No hay valoraciones aún.</div>
+      <div v-if="reviews.length === 0" class="text-gray-500 text-center">¡Sé el primero en comentar!</div>
       <div v-else>
         <div class="space-y-4">
           <ReviewItem
@@ -70,6 +71,7 @@ const newReview = ref({ rating: 0, comment: '', rest_id: restaurantId, user_id: 
 const store = useStore();
 const userId = computed(() => store.state.userId);
 const isLoggedIn = computed(() => store.getters.isLoggedIn);
+const isAdmin = computed(() => store.getters.isAdmin);
 
 onMounted(async () => {
   try {

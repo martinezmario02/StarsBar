@@ -58,15 +58,40 @@ app.post('/api/restaurants/:id/reviews', (req, res) => {
     return res.status(400).json({ error: "Todos los campos son requeridos." });
   }
 
-  const query = 'INSERT INTO reviews (user_id, rest_id, rating, comment) VALUES (?, ?, ?, ?)';
-  connection.query(query, [user_id, restaurantId, rating, comment], (err, result) => {
+  const queryInsert = 'INSERT INTO reviews (user_id, rest_id, rating, comment) VALUES (?, ?, ?, ?)';
+  connection.query(queryInsert, [user_id, restaurantId, rating, comment], (err, result) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(201).json({ message: 'Valoración añadida correctamente' });
+
+    const queryUpdate = `UPDATE restaurants SET average_rating = (SELECT AVG(rating) FROM reviews WHERE rest_id = ?) WHERE id = ?;`;
+    connection.query(queryUpdate, [restaurantId, restaurantId], (err) => {
+      if (err) {
+        return res.status(500).json({ error: 'Error al actualizar la calificación promedio.' });
+      }
+      res.status(201).json({ message: 'Valoración añadida correctamente' });
+    });
   });
 });
 
+
+// Delete review:
+app.delete('/api/reviews/:id', (req, res) => {
+  const reviewId = req.params.id;
+
+  const query = 'DELETE FROM reviews WHERE id = ?';
+  connection.query(query, [reviewId], (err, result) => {
+    if (err) {
+      return res.status(500).json({ success: false, message: 'Error al eliminar la reseña' });
+    }
+
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ success: false, message: 'Reseña no encontrada' });
+    }
+
+    res.json({ success: true, message: 'Reseña eliminada correctamente' });
+  });
+});
 
 // Get users:
 app.get('/api/users', (req, res) => {
@@ -90,7 +115,7 @@ app.post('/api/login', (req, res) => {
       const user = results[0];
       bcrypt.compare(pass, user.pass, (err, result) => {
         if (result) {
-          res.json({ success: true, name: user.name, id: user.id });
+          res.json({ success: true, name: user.name, id: user.id, rol: user.rol });
         } else {
           res.json({ success: false });
         }

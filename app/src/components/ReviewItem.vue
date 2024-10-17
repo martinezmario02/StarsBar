@@ -8,10 +8,20 @@
       </span>
     </div>
     <span class="text-yellow-500 font-bold text-xl ml-4">{{ review.rating }} ⭐</span>
+    <button v-if="isAdmin" @click="deleteReview(review.id)" class="bg-red-500 text-white p-2 rounded-full hover:bg-red-600 transition duration-200">
+      <i class="fas fa-trash-alt"></i>
+    </button>
   </div>
 </template>
 
 <script setup lang="ts">
+import axios from 'axios';
+import { useStore } from 'vuex';
+import { computed } from 'vue';
+
+const store = useStore();
+const isAdmin = computed(() => store.getters.isAdmin);
+
 interface Props {
   review: {
     id: number;
@@ -35,6 +45,20 @@ const formatDate = (dateString: string) => {
     minute: '2-digit',
     hour12: false,
   }).replace(',', '');
+};
+
+const deleteReview = async (reviewId: number) => {
+  try {
+    const response = await axios.delete(`http://localhost:3000/api/reviews/${reviewId}`);
+    if (response.data.success) {
+      alert('Reseña eliminada correctamente');
+    } else {
+      alert('Hubo un problema al eliminar la reseña');
+    }
+  } catch (error) {
+    console.error('Error al eliminar la reseña:', error);
+    alert('Error al eliminar la reseña');
+  }
 };
 </script>
 

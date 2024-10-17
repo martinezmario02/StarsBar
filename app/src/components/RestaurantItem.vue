@@ -18,6 +18,7 @@ const props = defineProps<Props>();
     <div class="p-2">
       <h4 class="text-lg font-bold text-gray-800">{{ props.restaurant.name }}</h4>
       <p class="text-gray-600">{{ props.restaurant.location }}</p>
+      <p class="font-bold text-xl text-yellow-400 flex justify-end">{{ props.restaurant.average_rating }} ★</p>
     </div>
   </div>
 </template>
