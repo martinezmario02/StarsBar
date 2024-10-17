@@ -7,6 +7,6 @@
   <PageHeader />
 
   <div id="app">
-    <RestaurantList />
+    <router-view />
   </div>
 </template>

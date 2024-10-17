@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 interface Props {
   restaurant: {
     id: number;
