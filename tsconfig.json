@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["src/*"] 
+    },
+    "baseUrl": "." 
+  },
+  "include": [
+    "src",
+    "tests" 
+  ]
+}

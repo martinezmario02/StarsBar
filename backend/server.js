@@ -79,17 +79,35 @@ app.post('/api/restaurants/:id/reviews', (req, res) => {
 app.delete('/api/reviews/:id', (req, res) => {
   const reviewId = req.params.id;
 
-  const query = 'DELETE FROM reviews WHERE id = ?';
-  connection.query(query, [reviewId], (err, result) => {
+  // Primero obtenemos el `rest_id` de la reseña antes de eliminarla
+  const getRestaurantIdQuery = 'SELECT rest_id FROM reviews WHERE id = ?';
+  connection.query(getRestaurantIdQuery, [reviewId], (err, result) => {
     if (err) {
-      return res.status(500).json({ success: false, message: 'Error al eliminar la reseña' });
+      return res.status(500).json({ success: false, message: 'Error al obtener la reseña' });
     }
-
-    if (result.affectedRows === 0) {
+    if (result.length === 0) {
       return res.status(404).json({ success: false, message: 'Reseña no encontrada' });
     }
 
-    res.json({ success: true, message: 'Reseña eliminada correctamente' });
+    const restaurantId = result[0].rest_id;
+    const deleteQuery = 'DELETE FROM reviews WHERE id = ?';
+    connection.query(deleteQuery, [reviewId], (err, deleteResult) => {
+      if (err) {
+        return res.status(500).json({ success: false, message: 'Error al eliminar la reseña' });
+      }
+      if (deleteResult.affectedRows === 0) {
+        return res.status(404).json({ success: false, message: 'Reseña no encontrada' });
+      }
+
+      const updateQuery = `UPDATE restaurants SET average_rating = (SELECT AVG(rating) FROM reviews WHERE rest_id = ?) WHERE id = ?;`;
+      connection.query(updateQuery, [restaurantId, restaurantId], (err) => {
+        if (err) {
+          return res.status(500).json({ success: false, message: 'Error al actualizar la calificación promedio.' });
+        }
+
+        res.status(200).json({ success: true, message: 'Reseña eliminada correctamente' });
+      });
+    });
   });
 });
 
@@ -159,6 +177,8 @@ app.post('/api/register', async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+const server = app.listen(3000, () => {
   console.log('Servidor corriendo en http://localhost:3000');
 });
+
+module.exports = { app, server }; 

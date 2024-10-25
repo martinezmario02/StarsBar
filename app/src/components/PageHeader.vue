@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import { useStore } from 'vuex';
 
@@ -15,6 +15,18 @@ const toggleLoginForm = () => {
   showLogin.value = !showLogin.value;
 };
 
+onMounted(() => {
+  const storedUserId = localStorage.getItem('userId');
+  const storedUserName = localStorage.getItem('name');
+  const storedUserRole = localStorage.getItem('rol');
+
+  if (storedUserId && storedUserRole) {
+    authenticated.value = true;
+    name.value = storedUserName || '';
+    store.dispatch('login', { userId: storedUserId, rol: storedUserRole });
+  }
+});
+
 const login = async () => {
   try {
     const response = await axios.post('http://localhost:3000/api/login', {
@@ -26,6 +38,10 @@ const login = async () => {
       authenticated.value = true;
       showLogin.value = false;
       name.value = response.data.name;
+      localStorage.setItem('userId', response.data.id);
+      localStorage.setItem('name', response.data.name);
+      localStorage.setItem('rol', response.data.rol);
+
       store.dispatch('login', { userId: response.data.id, rol: response.data.rol });
       mail.value = '';
       pass.value = '';
@@ -42,9 +58,13 @@ const login = async () => {
 const logout = () => {
   authenticated.value = false;
   name.value = '';
+  localStorage.removeItem('userId');
+  localStorage.removeItem('name');
+  localStorage.removeItem('rol');
   store.dispatch('logout');
 };
 </script>
+
 
 <template>
   <div class="relative py-10 bg-headerColor">

@@ -61,7 +61,3 @@ const deleteReview = async (reviewId: number) => {
   }
 };
 </script>
-
-<style scoped>
-/* Estilos opcionales para el componente de valoraciones */
-</style>

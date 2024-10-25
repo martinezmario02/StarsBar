@@ -15,4 +15,4 @@ connection.connect((err) => {
   console.log('Conexión a la base de datos establecida');
 });
 
-module.exports = connection;
+module.exports = connection; 
