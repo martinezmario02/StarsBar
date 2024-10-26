@@ -19,11 +19,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Display Node version and npm version
-        run: |
-          node -v
-          npm -v
-          npm list
-
       - name: Run tests
         run: npx jest
