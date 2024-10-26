@@ -74,12 +74,9 @@ app.post('/api/restaurants/:id/reviews', (req, res) => {
   });
 });
 
-
 // Delete review:
 app.delete('/api/reviews/:id', (req, res) => {
   const reviewId = req.params.id;
-
-  // Primero obtenemos el `rest_id` de la reseña antes de eliminarla
   const getRestaurantIdQuery = 'SELECT rest_id FROM reviews WHERE id = ?';
   connection.query(getRestaurantIdQuery, [reviewId], (err, result) => {
     if (err) {
