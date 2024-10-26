@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - main  # Cambia esto si tu rama principal tiene otro nombre
+      - main 
 
 jobs:
   test:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # O la versión que estás utilizando
+          node-version: '16' 
 
       - name: Clear npm cache
         run: npm cache clean --force
