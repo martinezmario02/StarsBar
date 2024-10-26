@@ -14,3 +14,10 @@
 
 <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white">
 
+## Elección del test runner:
+<p align="justify">
+  Posteriormente, se escogió el sistema de prueba del código, el cual es el encargado de encontrar, ejecutar y escribir informes sobre los tests. En StarsBar utilizamos, como hemos comentado con anterioridad, Jest que, además de actuar como biblioteca de aserciones, ejecuta las pruebas y muestra los resultados, proporcionando detalles sobre cuántas pruebas pasaron y cuántas fallaron.
+</p>
+
+<img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white">
+
