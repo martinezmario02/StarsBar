@@ -10,12 +10,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          node-version: '16'
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
       
       - name: Install dependencies
         run: npm install
+
+      - name: Display Node version and npm version
+        run: |
+          node -v
+          npm -v
+          npm list
 
       - name: Run tests
         run: npx jest
