@@ -15,4 +15,12 @@ connection.connect((err) => {
   console.log('Conexión a la base de datos establecida');
 });
 
+function close() {
+  if (connection) {
+      connection.end((err) => {
+          if (err) throw err;
+          console.log('Conexión a la base de datos cerrada');
+      });
+  }
+}
 module.exports = connection; 

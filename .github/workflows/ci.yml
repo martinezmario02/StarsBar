@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main  # O cualquier rama en la que quieras ejecutar los tests
+      - main  
   pull_request:
     branches:
-      - main  # O cualquier rama en la que quieras ejecutar los tests
+      - main 
 
 jobs:
   test:
