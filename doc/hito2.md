@@ -7,14 +7,14 @@
 
 <img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white">
 
-## Elección de la biblioteca de aserciones:
+## Elección de la biblioteca de aserciones
 <p align="justify">
-  Para realizar la comparación entre el resultado obtenido de los tests y el esperado, se ha escogido una biblioteca de aserciones. En el caso de StarsBar utiliza Jest, una herramienta de testing muy popular para JavaScript y TypeScript.
+  Para realizar la comparación entre el resultado obtenido de los tests y el esperado, se ha escogido una biblioteca de aserciones. En el caso de StarsBar, utiliza Jest, una herramienta de testing muy popular para JavaScript y TypeScript.
 </p>
 
 <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white">
 
-## Elección del test runner:
+## Elección del test runner
 <p align="justify">
   Posteriormente, se escogió el sistema de prueba del código, el cual es el encargado de encontrar, ejecutar y escribir informes sobre los tests. En StarsBar utilizamos, como hemos comentado con anterioridad, Jest que, además de actuar como biblioteca de aserciones, ejecuta las pruebas y muestra los resultados, proporcionando detalles sobre cuántas pruebas pasaron y cuántas fallaron.
 </p>
