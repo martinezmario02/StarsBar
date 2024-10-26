@@ -3,32 +3,56 @@ name: CI
 on:
   push:
     branches:
-      - main 
+      - main  # O cualquier rama en la que quieras ejecutar los tests
+  pull_request:
+    branches:
+      - main  # O cualquier rama en la que quieras ejecutar los tests
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.0  
+        ports:
+          - 3306:3306
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: starsbar
+        options: >-
+          --health-cmd="mysqladmin ping -h localhost"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: '16' 
-
-      - name: Clear npm cache
-        run: npm cache clean --force
+          node-version: '16'  
 
       - name: Install dependencies
         run: npm install
 
-      - name: Display Node version and npm version
+      - name: Wait for MySQL to be ready
         run: |
-          node -v
-          npm -v
-          npm list
+          until mysql -h 127.0.0.1 -u root -proot -e "SELECT 1"; do
+            sleep 1
+          done
+
+      - name: Setup database for tests
+        run: |
+          mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS test_db;"
+          # Aquí puedes agregar comandos SQL para crear tablas o insertar datos de prueba
 
       - name: Run tests
-        run: npx jest --verbose
+        run: npx jest
+        env:
+          DB_HOST: 127.0.0.1
+          DB_USER: root
+          DB_PASSWORD: root
+          DB_DATABASE: starsbar  
