@@ -2,6 +2,8 @@ name: CI
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -10,14 +12,23 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  
         with:
           node-version: '16'
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-      
       - name: Install dependencies
         run: npm install
 
+      - name: Clear npm cache
+        run: npm cache clean --force
+
+      - name: Display Node version and npm version
+        run: |
+          node -v
+          npm -v
+          npm list
+
       - name: Run tests
-        run: npx jest --no-cache
+        run: npx jest --verbose
