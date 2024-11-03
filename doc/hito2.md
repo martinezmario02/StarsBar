@@ -21,3 +21,11 @@
 
 <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white">
 
+## Integración de las pruebas 
+<p align="justify">
+  Para la integración de pruebas, se ha optado por el uso de 'npm test' para el lanzamiento de los tests. Esta elección se ha debido a que, de esta forma, el proyecto se alinea a con las mejores prácticas y estándares de la comunidad de desarrollo de JavaScript. Así pues, se garantiza una elección consistente, algo ensencial para manterner la calidad del código a lo largo del desarrollo del proyecto.
+
+  Como sistema online de prueba, se ha seleccionado GitHub Actions,ya que es un sistema estándar flexible y gratuito. Además, esta elección maximiza la eficiencia y la integración del trabajo, centralizando gran parte del proyecto en una única plataforma.
+</p>
+
+<img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white">
