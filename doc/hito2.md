@@ -29,3 +29,8 @@
 </p>
 
 <img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white">
+
+## Capturas de los tests
+
+![Tests](https://github.com/user-attachments/assets/501ff3d6-81e5-4102-a5ed-5a63137f5085)
+![actions](https://github.com/user-attachments/assets/05693997-8a18-481a-85f0-78d473624c6c)
