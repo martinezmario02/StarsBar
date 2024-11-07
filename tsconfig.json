@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "module": "commonjs", // Asegúrate de que el módulo sea común si usas Node.js
-    "target": "ES6", // Especifica el target que necesitas, puedes ajustarlo a ES2018 o superior
+    "module": "commonjs",
+    "target": "ES6", 
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true, // Opcional, pero puede ayudar a evitar problemas de tipo
+    "skipLibCheck": true, 
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".", 
     "paths": {
@@ -13,7 +13,7 @@
     }
   },
   "include": [
-    "src/**/*", // Asegúrate de que incluya todos los archivos TS
-    "tests/**/*" // Asegúrate de incluir los archivos de test
+    "src/**/*", 
+    "tests/**/*" 
   ]
 }
