@@ -4,8 +4,8 @@ import connection from '../backend/db';
 import bcrypt from 'bcrypt';
 
 afterAll(async () => {
-  await connection.end(); // Close DB connection if necessary
-  await server.close(); // Close the server
+  await connection.end(); 
+  await server.close(); 
 });
 
 // ------------------------------------------------------------------------------------
