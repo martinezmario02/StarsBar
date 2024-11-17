@@ -40,7 +40,7 @@ app.get('/api/restaurants/:id', (req, res) => {
       logger.info('Consulta a la información del restaurante realizada correctamente.');
       res.json(results[0]); 
     } else {
-      logger.error(`Error al buscar el restaurante: ${err.message}`);
+      logger.error('Error al buscar el restaurante');
       res.status(404).json({ error: 'Restaurante no encontrado' }); 
     }
   });

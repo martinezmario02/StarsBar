@@ -230,7 +230,7 @@ describe('DELETE /api/reviews/:id', () => {
     const response = await request(app).delete(`/api/reviews/${reviewId}`);
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty('success', true);
-    expect(response.body).toHaveProperty('message', 'Reseña eliminada correctamente');
+    expect(response.body).toHaveProperty('message', 'Valoración eliminada correctamente');
 
     connection.query = originalQuery; 
   });
@@ -249,7 +249,7 @@ describe('DELETE /api/reviews/:id', () => {
     const response = await request(app).delete(`/api/reviews/${reviewId}`);
     expect(response.status).toBe(404);
     expect(response.body).toHaveProperty('success', false);
-    expect(response.body).toHaveProperty('message', 'Reseña no encontrada');
+    expect(response.body).toHaveProperty('message', 'Valoración no encontrada');
 
     connection.query = originalQuery; 
   });
@@ -270,7 +270,7 @@ describe('DELETE /api/reviews/:id', () => {
     const response = await request(app).delete(`/api/reviews/${reviewId}`);
     expect(response.status).toBe(500);
     expect(response.body).toHaveProperty('success', false);
-    expect(response.body).toHaveProperty('message', 'Error al eliminar la reseña');
+    expect(response.body).toHaveProperty('message', 'Error al eliminar la valoración');
 
     connection.query = originalQuery; 
   });
