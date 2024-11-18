@@ -18,3 +18,11 @@
 
   Para acceder a la información sobre el hito 2 pulse [aquí](./doc/hito2.md).
 </p>
+
+## Hito 3: Diseño de microservicios
+
+<p align="justify">
+  En este hito se ha incorporado un sistema de logs, de forma que se registre, de manera clara y precisa, la actividad de la API en un archivo.
+  
+  Para acceder a la información sobre el hito 3 pulse [aquí](./doc/hito3.md).
+</p>
