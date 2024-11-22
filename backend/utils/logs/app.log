@@ -1,0 +1,7 @@
+
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-11-22T15:49:58.469Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-11-22T15:49:58.877Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2 recibida.","timestamp":"2024-11-22T15:49:59.954Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-11-22T15:49:59.955Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-11-22T15:50:00.230Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-11-22T15:50:00.232Z"}
