@@ -15,9 +15,16 @@ jobs:
     services:
       mysql:
         image: mysql:8.0  
+        ports:
+          - 3306:3306
         env:
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: starsbar
+        options: >-
+          --health-cmd="mysqladmin ping -h localhost"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
 
     steps:
       - name: Checkout code
@@ -31,8 +38,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Wait for MySQL
-        run: until mysql -h 127.0.0.1 -u root -proot -e "SELECT 1"; do sleep 1; done
+      - name: Wait for MySQL to be ready
+        run: |
+          until mysql -h 127.0.0.1 -u root -proot -e "SELECT 1"; do
+            sleep 1
+          done
+
+      - name: Setup database for tests
+        run: |
+          mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS starsbar;"
 
       - name: Run tests
         run: npx jest
@@ -40,4 +54,4 @@ jobs:
           DB_HOST: 127.0.0.1
           DB_USER: root
           DB_PASSWORD: root
-          DB_DATABASE: starsbar
+          DB_DATABASE: starsbar  
