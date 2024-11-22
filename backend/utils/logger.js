@@ -8,7 +8,6 @@ const logger = createLogger({
     format.json() 
   ),
   transports: [
-    new transports.Console(),
     new transports.File({ 
       filename: path.join(__dirname, 'logs', 'app.log'), 
       level: 'info', 

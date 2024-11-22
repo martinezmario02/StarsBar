@@ -5,7 +5,7 @@
   Winston es un popular framework de registro de logs en Node.js que se ha convertido en un estándar por diversos motivos. 
   Por un lado, permite una configuración sencilla y flexible, facilitando su uso tanto en proyectos simples como en aplicaciones complejas.
   Además, la capacidad de personalizar el formato de los logs hace que sea adaptable a las necesidades de desarrollo y producción.
-  Por otro lado, soporta diferentes transportes de forma nativa. En nuestro caso, se han impreso los logs tanto en la consola como en un archivo auxiliar denominado app.log.
+  Por otro lado, soporta diferentes transportes de forma nativa. En nuestro caso, se han guardado los logs en un archivo auxiliar denominado app.log.
 </p>
 
 <p align="justify">
