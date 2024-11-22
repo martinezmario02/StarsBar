@@ -47,7 +47,6 @@ jobs:
       - name: Setup database for tests
         run: |
           mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS starsbar;"
-          # Aquí puedes agregar comandos SQL para crear tablas o insertar datos de prueba
 
       - name: Run tests
         run: npx jest
