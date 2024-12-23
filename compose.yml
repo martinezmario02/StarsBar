@@ -1,0 +1,81 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: starsbar
+    volumes:
+      - ./backend:/usr/src/backend
+      - ./app:/usr/src/frontend
+    ports:
+      - "3000:3000" # Backend
+      - "5173:5173" # Frontend
+    environment:
+      DB_HOST: db
+      DB_USER: mariocc
+      DB_PASSWORD: mariocc
+      DB_DATABASE: starsbar
+      LOGSTASH_HOST: logstash
+      LOGSTASH_PORT: 5044
+    depends_on:
+      - db
+      - logstash
+    entrypoint: ["sh", "-c", "until nc -z -v -w60 db 3306; do echo 'Waiting for MySQL...'; sleep 5; done; node /usr/src/backend/server.js"]
+    networks:
+      - app_network
+
+  db:
+    image: mysql:8.0
+    container_name: lamp-mysql8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: mariocc
+      MYSQL_PASSWORD: mariocc
+      MYSQL_DATABASE: starsbar
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app_network
+  
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.10.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9201:9200"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.10.0
+    container_name: logstash
+    volumes:
+      - ./logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    ports:
+      - "5044:5044"
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.9.0
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_HOSTS: "http://elasticsearch:9200"
+    depends_on:
+      - elasticsearch
+
+volumes:
+  db_data:
+    driver: local
+  es_data:
+
+networks:
+  app_network:
+    driver: bridge

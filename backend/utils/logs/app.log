@@ -5,3 +5,17 @@
 {"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-11-22T15:49:59.955Z"}
 {"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-11-22T15:50:00.230Z"}
 {"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-11-22T15:50:00.232Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T14:25:11.020Z"}
+{"level":"error","message":"Error al consultar restaurantes: Table 'starsbar.restaurants' doesn't exist","timestamp":"2024-12-23T14:25:22.765Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T14:36:46.371Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T14:36:49.314Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T14:55:14.796Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T14:55:17.040Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T15:01:19.814Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T15:01:19.868Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T15:14:14.696Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T15:14:15.774Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T15:29:03.958Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T15:29:05.972Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T16:06:50.256Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T16:06:54.818Z"}
