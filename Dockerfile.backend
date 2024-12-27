@@ -1,0 +1,22 @@
+FROM node:alpine
+
+# Crea y establece los directorios de trabajo
+WORKDIR /usr/src/backend
+
+# Instala las herramientas necesarias para compilar dependencias nativas
+RUN apk add --no-cache build-base python3
+
+# Copia el código del backend al contenedor
+COPY ./backend /usr/src/backend
+
+# Instalar dependencias del backend
+RUN npm install
+
+# Limpia las herramientas de compilación para reducir el tamaño de la imagen
+RUN apk del build-base python3
+
+# Expón el puerto del backend
+EXPOSE 3000
+
+# Ejecuta el servidor del backend
+CMD ["npm", "start"]

@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import RestaurantItem from './RestaurantItem.vue';
 import { useRouter } from 'vue-router';
+import { API_URL } from '../main';
 
 const restaurants = ref([]);
 const router = useRouter();
@@ -10,7 +11,7 @@ const router = useRouter();
 // Get restaurants:
 onMounted(async () => {
   try {
-    const response = await axios.get('http://localhost:3000/api/restaurants');
+    const response = await axios.get(`${API_URL}/api/restaurants`);
     console.log('Datos de restaurantes:', response.data);
     restaurants.value = response.data;
   } catch (error) {

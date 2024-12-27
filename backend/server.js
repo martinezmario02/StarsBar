@@ -8,7 +8,12 @@ const logger = require('./utils/logger');
 
 
 app.use('/imgs', express.static(path.join(__dirname, 'imgs')));
-app.use(cors());
+
+app.use(cors({
+  origin: ['http://localhost:5173', 'http://frontend:5173'],
+  credentials: true, 
+}));
+
 app.use(express.json());
 
 // Get restaurants:
@@ -49,7 +54,7 @@ app.get('/api/restaurants/:id', (req, res) => {
 // Get reviews:
 app.get('/api/restaurants/:id/reviews', (req, res) => {
   const restaurantId = req.params.id;
-  logger.info(`Petición GET a /api/restaurants/${restaurantId}/reviews recibida.`);
+  logger.info(`Petición GET a /api/restaurants/${restaurantId}/reviews recibida.`);      
   
   connection.query(
     'SELECT r.id, r.rating, r.comment, u.name, r.created_at FROM reviews r JOIN users u ON r.user_id = u.id WHERE r.rest_id = ? order by created_at desc', 
@@ -219,8 +224,12 @@ app.post('/api/register', async (req, res) => {
   }
 });
 
-const server = app.listen(3000, () => {
-  console.log('Servidor corriendo en http://localhost:3000');
+app.get('/', (req, res) => {
+  res.send('Backend is working!');
+});
+
+const server = app.listen(3000, '172.19.0.4', () => {
+  console.log('Servidor corriendo en http://172.19.0.4:3000');
 });
 
 module.exports = { app, server }; 

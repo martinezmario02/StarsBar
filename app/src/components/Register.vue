@@ -44,6 +44,7 @@
   import { ref } from 'vue';
   import axios from 'axios';
   import { useRouter } from 'vue-router';
+  import { API_URL } from '../main';
   
   const name = ref('');
   const lastName = ref('');
@@ -54,7 +55,7 @@
   
   const registerUser = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/register', {
+      const response = await axios.post(`${API_URL}/api/register`, {
         name: name.value,
         lastName: lastName.value,
         location: location.value,

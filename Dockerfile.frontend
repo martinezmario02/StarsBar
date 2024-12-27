@@ -1,0 +1,16 @@
+FROM node:alpine
+
+# Crea y establece los directorios de trabajo
+WORKDIR /usr/src/frontend
+
+# Copia el código del frontend al contenedor
+COPY ./app /usr/src/frontend
+
+# Instalar dependencias del frontend
+RUN npm install
+
+# Expón el puerto del frontend
+EXPOSE 5173
+
+# Ejecuta el servidor del frontend
+CMD ["npm", "run", "dev"]

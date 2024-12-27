@@ -19,3 +19,319 @@
 {"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T15:29:05.972Z"}
 {"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T16:06:50.256Z"}
 {"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T16:06:54.818Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T16:28:34.147Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T16:28:37.020Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-23T16:39:47.665Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-23T16:39:49.502Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T10:16:32.752Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T10:16:33.874Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T10:24:09.990Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T10:24:10.104Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T10:24:19.119Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T10:24:19.146Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T10:24:20.633Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T10:24:20.637Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T10:24:27.530Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T10:24:27.532Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T10:24:39.802Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T10:24:40.007Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T10:24:46.099Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T10:24:46.127Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T10:24:47.655Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T10:24:47.656Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T10:26:42.963Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T10:26:43.170Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T10:27:35.672Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T10:27:36.560Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T10:27:36.619Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T10:27:36.808Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T10:28:13.645Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T10:36:47.930Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T10:36:50.658Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T10:37:22.806Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T10:37:22.808Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T10:48:37.917Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T10:48:41.782Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T10:56:24.115Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T10:56:25.876Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T11:19:31.741Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T11:19:33.233Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T11:20:10.095Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T11:20:10.639Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T11:25:35.211Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T11:25:35.509Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T11:25:57.049Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T11:25:57.351Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T11:36:27.956Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T11:36:28.635Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T11:36:58.258Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T11:36:58.601Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T11:37:35.794Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T11:37:35.958Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T11:40:03.581Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T11:50:14.045Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T11:50:16.616Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T11:50:32.861Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T11:50:33.358Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T11:56:07.604Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T11:56:08.703Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T11:56:22.627Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T11:56:24.928Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T12:01:52.930Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T12:01:53.599Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T12:02:06.841Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T12:02:07.354Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T12:02:17.820Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T12:02:17.969Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T12:02:18.554Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T12:02:18.789Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:02:23.579Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:02:23.961Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:02:24.422Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:02:24.967Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T12:02:33.691Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T12:02:33.692Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:04:09.885Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:04:10.645Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:04:10.740Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:04:10.759Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T12:04:26.163Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T12:04:26.164Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:05:30.679Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:05:30.680Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:05:30.687Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:05:30.688Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:14:17.396Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:14:18.179Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:14:18.182Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:14:18.344Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T12:18:26.177Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T12:18:26.595Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T12:19:14.747Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T12:31:43.420Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T12:31:45.552Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T12:32:03.094Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T12:32:03.667Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2 recibida.","timestamp":"2024-12-24T12:32:59.999Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T12:33:01.543Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:33:01.870Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T12:33:02.341Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-12-24T12:33:02.556Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:33:02.716Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T12:33:04.594Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T12:33:04.596Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:33:06.040Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:33:06.041Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:33:06.130Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:33:06.131Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:40:09.454Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:40:09.558Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:40:09.563Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:40:09.563Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:42:01.864Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:42:02.023Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:42:02.028Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:42:02.030Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:42:03.431Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:42:03.432Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:42:03.443Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:42:03.445Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:42:04.235Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:42:04.236Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:42:04.243Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:42:04.244Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T12:49:30.220Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T12:49:30.445Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T12:49:30.457Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T12:49:30.461Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T15:54:47.027Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T15:54:48.672Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:04:16.802Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:04:17.476Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:04:41.713Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:04:42.351Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-24T16:04:58.036Z"}
+{"level":"error","message":"Inicio de sesión incorrecto.","timestamp":"2024-12-24T16:05:01.356Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T16:05:44.499Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:13:52.144Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:13:53.720Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T16:14:17.464Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:21:55.841Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:22:00.585Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:22:09.446Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:22:09.448Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T16:22:29.783Z"}
+{"level":"error","message":"Error al procesar el registro: Cannot read properties of undefined (reading 'length')","timestamp":"2024-12-24T16:22:30.280Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:32:42.575Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:32:42.675Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:32:53.087Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:32:53.089Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:32:54.751Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:32:54.752Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T16:33:10.481Z"}
+{"level":"error","message":"Error al procesar el registro: Cannot read properties of undefined (reading 'length')","timestamp":"2024-12-24T16:33:10.576Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:33:24.241Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:33:24.242Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T16:33:29.026Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T16:33:29.027Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T16:33:29.032Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T16:33:29.033Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:33:31.302Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:33:31.304Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2 recibida.","timestamp":"2024-12-24T16:33:33.165Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T16:33:33.166Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-12-24T16:33:33.265Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T16:33:33.265Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:33:36.512Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:33:36.513Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:45:31.468Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:45:32.278Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T16:45:35.465Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T16:45:35.467Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T16:45:35.728Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T16:45:35.731Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:45:41.708Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:45:41.710Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2 recibida.","timestamp":"2024-12-24T16:45:44.065Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T16:45:44.197Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-12-24T16:45:44.551Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T16:45:44.552Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:46:06.795Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:46:06.852Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:46:15.064Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:46:15.282Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:57:16.225Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:57:16.353Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T16:57:19.746Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T16:57:19.748Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T16:57:19.753Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T16:57:19.755Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T16:57:21.592Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T16:57:21.593Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T16:57:45.988Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T17:15:29.483Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T17:15:44.970Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-24T17:16:13.987Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T17:16:14.165Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-24T17:16:14.187Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T17:16:14.209Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T17:16:16.789Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T17:16:16.790Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2 recibida.","timestamp":"2024-12-24T17:16:18.212Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-24T17:16:18.213Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-12-24T17:16:18.285Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-24T17:16:18.286Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T17:16:25.462Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T17:16:25.463Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-24T17:16:28.403Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-24T17:16:28.404Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-24T17:20:02.496Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T10:39:11.266Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T10:39:12.283Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T10:39:26.555Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T10:39:27.232Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T10:39:27.237Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-26T10:39:27.294Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T10:56:49.490Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T10:56:53.418Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T10:57:41.395Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-26T10:57:41.778Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-12-26T10:59:27.122Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-26T10:59:29.391Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-12-26T11:10:44.631Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-26T11:10:45.429Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T15:27:08.875Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T15:27:10.712Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T15:27:12.162Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-26T15:27:12.397Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T15:27:55.742Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T15:27:55.744Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T15:28:00.870Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T15:28:00.872Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T15:28:14.824Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T15:28:14.825Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T15:28:21.973Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Unknown column 'r.created_at' in 'field list'","timestamp":"2024-12-26T15:28:22.117Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T15:33:04.631Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T15:33:07.090Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T15:59:43.860Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T15:59:44.152Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T15:59:51.742Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T15:59:52.051Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T15:59:52.057Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T15:59:52.294Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T15:59:59.602Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T15:59:59.604Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-26T16:01:00.402Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T16:06:52.990Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T16:06:53.018Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-26T16:07:18.023Z"}
+{"level":"error","message":"Error al procesar el registro: Cannot read properties of undefined (reading 'length')","timestamp":"2024-12-26T16:07:18.027Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T16:07:41.124Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T16:07:41.126Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T16:07:45.195Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T16:07:45.196Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T16:07:45.202Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T16:07:45.346Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T16:07:59.389Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T16:07:59.390Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2 recibida.","timestamp":"2024-12-26T16:08:00.608Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T16:08:00.610Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-12-26T16:08:00.616Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T16:08:00.617Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T16:08:02.879Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T16:08:02.881Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T16:08:04.805Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T16:08:04.806Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T16:08:04.811Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T16:08:04.812Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T16:08:15.716Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T16:08:15.717Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T16:08:15.861Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T16:08:15.862Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T16:09:43.435Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T16:09:45.662Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T16:09:45.784Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T16:09:46.136Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-26T16:09:57.939Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T16:18:24.604Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T16:18:24.907Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T16:18:24.918Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T16:18:24.923Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T16:18:47.675Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T16:18:48.168Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-26T16:19:02.325Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2 recibida.","timestamp":"2024-12-26T17:55:38.383Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T17:55:44.659Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/2/reviews recibida.","timestamp":"2024-12-26T17:55:44.727Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T17:55:45.351Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-26T17:56:06.815Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T18:05:25.153Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T18:05:29.236Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T18:05:35.390Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T18:05:35.635Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T18:05:36.097Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T18:05:36.563Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T18:20:22.323Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T18:20:22.469Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T18:20:22.529Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T18:20:22.745Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-26T18:20:23.001Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-26T18:20:23.002Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-26T18:20:23.010Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2024-12-26T18:20:23.013Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-26T18:20:33.069Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-26T18:42:31.917Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-26T18:42:41.485Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-26T18:43:34.139Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2024-12-27T10:19:57.330Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2024-12-27T10:19:57.939Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2024-12-27T10:19:58.988Z"}
+{"level":"error","message":"Error al consultar las valoraciones del restaurante: Table 'starsbar.reviews' doesn't exist","timestamp":"2024-12-27T10:19:58.990Z"}
+{"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-27T10:20:26.348Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-27T10:40:28.863Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-27T10:40:34.394Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-27T10:40:49.948Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2024-12-27T11:10:19.903Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2024-12-27T11:10:23.730Z"}
+{"level":"info","message":"Petición POST a /api/login recibida.","timestamp":"2024-12-27T11:10:59.275Z"}

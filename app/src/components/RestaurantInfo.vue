@@ -62,6 +62,7 @@ import { useRoute } from 'vue-router';
 import axios from 'axios';
 import ReviewItem from './ReviewItem.vue';
 import { useStore } from 'vuex';
+import { API_URL } from '../main';
 
 const route = useRoute();
 const restaurantId = route.params.id;
@@ -75,10 +76,10 @@ const isAdmin = computed(() => store.getters.isAdmin);
 
 onMounted(async () => {
   try {
-    const restaurantResponse = await axios.get(`http://localhost:3000/api/restaurants/${restaurantId}`);
+    const restaurantResponse = await axios.get(`${API_URL}/api/restaurants/${restaurantId}`);
     restaurant.value = restaurantResponse.data;
 
-    const reviewsResponse = await axios.get(`http://localhost:3000/api/restaurants/${restaurantId}/reviews`);
+    const reviewsResponse = await axios.get(`${API_URL}/api/restaurants/${restaurantId}/reviews`);
     reviews.value = reviewsResponse.data; 
   } catch (error) {
     console.error('Error al obtener los detalles del restaurante o las valoraciones:', error);
@@ -111,7 +112,7 @@ const submitReview = async () => {
   }
 
   try {
-    await axios.post(`http://localhost:3000/api/restaurants/${restaurantId}/reviews`, {
+    await axios.post(`${API_URL}/api/restaurants/${restaurantId}/reviews`, {
       rating: newReview.value.rating,
       comment: newReview.value.comment,
       rest_id: newReview.value.rest_id,
@@ -122,7 +123,7 @@ const submitReview = async () => {
     rating.value = 0;
 
     alert('Valoración enviada con éxito');
-    const reviewsResponse = await axios.get(`http://localhost:3000/api/restaurants/${restaurantId}/reviews`);
+    const reviewsResponse = await axios.get(`${API_URL}/api/restaurants/${restaurantId}/reviews`);
     reviews.value = reviewsResponse.data; 
 
   } catch (error) {

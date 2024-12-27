@@ -2,6 +2,7 @@
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import { useStore } from 'vuex';
+import { API_URL } from '../main';
 
 const authenticated = ref(false);
 const showLogin = ref(false);
@@ -29,7 +30,7 @@ onMounted(() => {
 
 const login = async () => {
   try {
-    const response = await axios.post('http://localhost:3000/api/login', {
+    const response = await axios.post(`${API_URL}/api/login`, {
       mail: mail.value,
       pass: pass.value
     });

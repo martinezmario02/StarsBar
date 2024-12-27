@@ -18,6 +18,7 @@
 import axios from 'axios';
 import { useStore } from 'vuex';
 import { computed } from 'vue';
+import { API_URL } from '../main';
 
 const store = useStore();
 const isAdmin = computed(() => store.getters.isAdmin);
@@ -49,7 +50,7 @@ const formatDate = (dateString: string) => {
 
 const deleteReview = async (reviewId: number) => {
   try {
-    const response = await axios.delete(`http://localhost:3000/api/reviews/${reviewId}`);
+    const response = await axios.delete(`${API_URL}/api/reviews/${reviewId}`);
     if (response.data.success) {
       alert('Reseña eliminada correctamente');
     } else {
