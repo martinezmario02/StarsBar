@@ -26,3 +26,10 @@
   
   Para acceder a la información sobre el hito 3 pulse [aquí](./doc/hito3.md).
 </p>
+
+## Hito 4: Composición de servicios
+<p align="justify">
+  En este hito se ha dividido la funcionalidad en distintos contenedores, conectándolos entre ellos y publicando el resultado en Github Packages.
+  
+  Para acceder a la información sobre el hito 4 pulse [aquí](./doc/hito4.md).
+</p>

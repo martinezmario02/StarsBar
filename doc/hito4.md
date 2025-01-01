@@ -131,7 +131,7 @@ El archivo `docker-compose.yml` configura un clúster de contenedores para ejecu
 
 ## Correcta implementación y ejecución del test para validar el funcionamiento del clúster de contenedores
 
-Para garantizar que todos los servicios del clúster de contenedores están funcionando correctamente, se ha implementado una serie de pruebas automatizadas utilizando **Jest**. Estas pruebas verifican que cada componente del clúster, tanto el backend como el frontend, así como los servicios asociados como la base de datos, Kibana, Elasticsearch y Logstash, están operativos y respondiendo correctamente.
+Para garantizar que todos los servicios del clúster de contenedores están funcionando correctamente, se ha implementado una serie de pruebas automatizadas utilizando **Jest**. Estas pruebas verifican que cada componente del clúster, tanto el backend como el frontend, así como los servicios asociados como la base de datos, Kibana y Elasticsearch, están operativos y respondiendo correctamente.
 
 #### Los tests incluyen:
 
@@ -140,8 +140,10 @@ Para garantizar que todos los servicios del clúster de contenedores están func
 3. **Conexión a la Base de Datos MySQL**: Comprueba que el contenedor de MySQL esté funcionando y respondiendo a las solicitudes.
 4. **Acceso a Kibana**: Valida que el servicio de Kibana esté accesible para realizar visualización y monitoreo de los logs.
 5. **Acceso a Elasticsearch**: Asegura que Elasticsearch esté operando correctamente y disponible para búsquedas.
-6. **Logstash en ejecución**: Verifica que el servicio de Logstash esté funcionando y procesando logs como se espera.
 
 #### Ejecución de las pruebas
 
-Las pruebas pueden ejecutarse mediante **Jest**, lo cual permite validar de manera rápida y eficiente el estado de todos los servicios del clúster. 
+Las pruebas pueden ejecutarse mediante **Jest**, lo cual permite validar de manera rápida y eficiente el estado de todos los servicios del clúster.
+
+![testsh4](https://github.com/user-attachments/assets/05f5f97c-868d-49e3-a9d3-ddbcc07cb57e)
+
