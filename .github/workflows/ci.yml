@@ -48,10 +48,28 @@ jobs:
         run: |
           mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS starsbar;"
 
-      - name: Run tests
-        run: npx jest
+      - name: Run server tests
+        run: npx jest server.test.ts
         env:
           DB_HOST: 127.0.0.1
           DB_USER: root
           DB_PASSWORD: root
-          DB_DATABASE: starsbar  
+          DB_DATABASE: starsbar   
+
+      - name: Start necessary containers for integration tests
+        run: |
+          docker-compose -f docker-compose.integration.yml up -d  # Levantamos los contenedores necesarios para los tests de integración
+
+      - name: Wait for containers to be ready
+        run: |
+          # Aquí puedes agregar comandos para verificar que los contenedores estén listos si es necesario
+          until curl -s http://localhost:5000/; do  # Este es solo un ejemplo, cambia el puerto y URL según lo que necesites
+            sleep 1
+          done
+
+      - name: Run integration tests
+        run: npx jest integration.test.ts 
+
+      - name: Stop containers
+        run: |
+          docker-compose -f docker-compose.integration.yml down  # Apagamos los contenedores después de los tests
