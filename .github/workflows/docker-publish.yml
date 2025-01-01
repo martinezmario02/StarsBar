@@ -25,6 +25,14 @@ jobs:
       - name: Log in to GitHub Container Registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
+      - name: Debug - Check Docker Login
+        run: |
+          echo "Checking Docker login status"
+          docker info
+          echo "Listing Docker images"
+          docker images
+
+
       - name: Build Docker Image for Frontend
         run: docker build -f Dockerfile.frontend -t ghcr.io/${{ github.actor }}/starsbar-frontend:latest .
 
