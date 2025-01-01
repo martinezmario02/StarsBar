@@ -17,19 +17,14 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Verify Repository Structure
-        run: |
-          echo "Listing repository structure for debugging:"
-          ls -R
-
       - name: Log in to GitHub Container Registry
-        run: echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ secrets.GHCR_USERNAME }} --password-stdin
+        run: echo "${{ secrets.token_starsbar }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker Image for Frontend
-        run: docker build -f Dockerfile.frontend -t ghcr.io/${{ secrets.GHCR_USERNAME }}/starsbar-frontend:latest .
+        run: docker build -f Dockerfile.frontend -t ghcr.io/${{ github.actor }}/starsbar-frontend:latest .
 
       - name: Push Docker Image for Frontend
-        run: docker push ghcr.io/${{ secrets.GHCR_USERNAME }}/starsbar-frontend:latest
+        run: docker push ghcr.io/${{ github.actor }}/starsbar-frontend:latest
 
   build-and-push-backend:
     runs-on: ubuntu-latest
@@ -42,13 +37,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Verify Repository Structure
-        run: |
-          echo "Listing repository structure for debugging:"
-          ls -R
-
       - name: Log in to GitHub Container Registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.token_starsbar }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker Image for Backend
         run: docker build -f Dockerfile.backend -t ghcr.io/${{ github.actor }}/starsbar-backend:latest .
