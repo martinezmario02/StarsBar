@@ -3,6 +3,13 @@ import { app, server } from '../backend/server';
 import connection from '../backend/db';
 import bcrypt from 'bcrypt';
 
+beforeAll((done) => {
+  server.listen(3000, () => {
+    console.log('Servidor levantado en el puerto 3000');
+    done(); 
+  });
+});
+
 afterAll(async () => {
   await connection.end(); 
   await server.close(); 

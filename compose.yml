@@ -39,6 +39,8 @@ services:
       DB_DATABASE: starsbar
       LOGSTASH_HOST: logstash
       LOGSTASH_PORT: 5044
+      DB_PORT: 3306
+      NODE_ENV: development
     depends_on:
       - db
       - logstash
@@ -57,7 +59,7 @@ services:
       - ./app:/usr/src/frontend
     environment:
       # - NODE_ENV=development
-      VITE_API_URL: http://172.19.0.4:3000
+      VITE_API_URL: http://0.0.0.0:3000
     deploy:
       resources:
         limits:

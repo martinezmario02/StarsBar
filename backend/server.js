@@ -228,8 +228,8 @@ app.get('/', (req, res) => {
   res.send('Backend is working!');
 });
 
-const server = app.listen(3000, '172.19.0.4', () => {
-  console.log('Servidor corriendo en http://172.19.0.4:3000');
+const server = app.listen(3000, '0.0.0.0', () => {
+  console.log('Servidor corriendo en el puerto 3000');
 });
 
 module.exports = { app, server }; 
