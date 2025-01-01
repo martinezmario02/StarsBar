@@ -22,7 +22,7 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker Image for Frontend
-        run: docker build -f dockerfile.frontend -t ghcr.io/${{ github.actor }}/starsbar-frontend:latest .
+        run: docker build -f Dockerfile.frontend -t ghcr.io/${{ github.actor }}/starsbar-frontend:latest .
 
       - name: Push Docker Image for Frontend
         run: docker push ghcr.io/${{ github.actor }}/starsbar-frontend:latest
@@ -43,7 +43,7 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker Image for Backend
-        run: docker build -f dockerfile.backend -t ghcr.io/${{ github.actor }}/starsbar-backend:latest .
+        run: docker build -f Dockerfile.backend -t ghcr.io/${{ github.actor }}/starsbar-backend:latest .
 
       - name: Push Docker Image for Backend
         run: docker push ghcr.io/${{ github.actor }}/starsbar-backend:latest
