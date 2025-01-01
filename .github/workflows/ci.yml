@@ -33,7 +33,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  
+          node-version: '16'
 
       - name: Install dependencies
         run: npm install
@@ -48,10 +48,38 @@ jobs:
         run: |
           mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS starsbar;"
 
-      - name: Run tests
-        run: npx jest
+      - name: Run server tests
+        run: npx jest server.test.ts
         env:
           DB_HOST: 127.0.0.1
           DB_USER: root
           DB_PASSWORD: root
-          DB_DATABASE: starsbar  
+          DB_DATABASE: starsbar   
+
+      # - name: Install docker-compose
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y docker-compose
+
+      # - name: Verify docker-compose file location
+      #   run: |
+      #     echo "Checking for docker-compose.integration.yml"
+      #     pwd
+      #     ls -R
+
+      # - name: Start necessary containers for integration tests
+      #   run: |
+      #     docker-compose -f integration/docker-compose.integration.yml up -d
+
+      # - name: Wait for containers to be ready
+      #   run: |
+      #     until curl -s http://localhost:3000/; do
+      #       sleep 1
+      #     done
+
+      # - name: Run integration tests
+      #   run: npx jest integration.test.ts
+
+      # - name: Stop containers
+      #   run: |
+      #     docker-compose -f integration/docker-compose.integration.yml down
