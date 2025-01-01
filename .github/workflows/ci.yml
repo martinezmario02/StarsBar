@@ -33,7 +33,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  
+          node-version: '16'
 
       - name: Install dependencies
         run: npm install
@@ -56,20 +56,25 @@ jobs:
           DB_PASSWORD: root
           DB_DATABASE: starsbar   
 
+      - name: Install docker-compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
+
       - name: Start necessary containers for integration tests
         run: |
-          docker-compose -f docker-compose.integration.yml up -d  # Levantamos los contenedores necesarios para los tests de integración
+          docker-compose -f docker-compose.integration.yml up -d
 
       - name: Wait for containers to be ready
         run: |
-          # Aquí puedes agregar comandos para verificar que los contenedores estén listos si es necesario
-          until curl -s http://localhost:5000/; do  # Este es solo un ejemplo, cambia el puerto y URL según lo que necesites
+          # Asegúrate de ajustar esto para tus servicios específicos
+          until curl -s http://localhost:3000/; do
             sleep 1
           done
 
       - name: Run integration tests
-        run: npx jest integration.test.ts 
+        run: npx jest integration.test.ts
 
       - name: Stop containers
         run: |
-          docker-compose -f docker-compose.integration.yml down  # Apagamos los contenedores después de los tests
+          docker-compose -f docker-compose.integration.yml down
