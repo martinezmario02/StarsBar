@@ -71,10 +71,62 @@ En este proyecto se utilizan dos Dockerfile distintos con el objetivo de consegu
 - **Instalación de dependencias**: Ejecuta `npm install` para instalar las dependencias del frontend.
 - **Comando de ejecución**: Inicia el servidor de desarrollo con `npm run dev`.
 
-## Contenedor subido correctamente a GitHUb Packages y documentación de la actualización automática
+## Contenedor subido correctamente a GitHub Packages y documentación de la actualización automática
+Este proyecto utiliza **GitHub Actions** para la actualización automática y publicación del contenedor Docker en **GitHub Packages**. Cada vez que se realice un cambio en la rama principal (`main`), el contenedor se reconstruirá y se subirá automáticamente a GitHub Container Registry.
 
+### Workflow de GitHub Actions
+
+1. **Reconstrucción y Publicación Automática**: Cada vez que se haga un `push` a la rama `main`, el flujo de trabajo de **GitHub Actions** se activará automáticamente para reconstruir las imágenes Docker del frontend y backend del proyecto, y las subirá a **GitHub Container Registry**.
+   
+2. **Uso de Dockerfiles Específicos**: Existen dos archivos `Dockerfile` en el proyecto:
+   - `Dockerfile.frontend` para la construcción de la imagen Docker del **frontend**.
+   - `Dockerfile.backend` para la construcción de la imagen Docker del **backend**.
+
+### Proceso de Construcción y Publicación
+
+**Acciones de GitHub**:
+   - El archivo de configuración `.github/workflows/docker-publish.yml` contiene las instrucciones de cómo se ejecuta el flujo de trabajo.
+   - En este flujo de trabajo se realiza lo siguiente:
+     - **Login** a **GitHub Container Registry** con el token de acceso.
+     - **Construcción** de las imágenes Docker para el frontend y el backend usando los respectivos `Dockerfile`.
+     - **Publicación** de las imágenes Docker en **GitHub Container Registry**.
 
 ## Documentación del fichero de composición del clúster de contenedores compose.yaml
+El archivo `docker-compose.yml` configura un clúster de contenedores para ejecutar una aplicación completa con un backend, frontend, base de datos MySQL, Elasticsearch, Logstash y Kibana. A continuación, se presenta un resumen de los servicios definidos:
 
+### 1. **Backend**
+- Construido desde `Dockerfile.backend`.
+- Expone el puerto `3000` para la comunicación.
+- Conecta con la base de datos MySQL y Logstash.
+- Usa una red interna `app_network`.
+
+### 2. **Frontend**
+- Construido desde `Dockerfile.frontend`.
+- Expone el puerto `5173`.
+- Conecta con el backend a través de la URL definida en el entorno `VITE_API_URL`.
+- Tiene un límite de memoria de 512 MB.
+
+### 3. **Base de Datos (MySQL)**
+- Usa la imagen `mysql:8.0`.
+- Expone el puerto `3306`.
+- Configurado con variables de entorno para el acceso a la base de datos.
+
+### 4. **Elasticsearch**
+- Usa la imagen `docker.elastic.co/elasticsearch/elasticsearch:8.10.0`.
+- Expone el puerto `9201` para la conexión.
+- Configurado en un nodo único con seguridad desactivada.
+
+### 5. **Logstash**
+- Usa la imagen `docker.elastic.co/logstash/logstash:8.10.0`.
+- Conecta con Elasticsearch y procesa los logs del backend.
+- Expone el puerto `5044`.
+
+### 6. **Kibana**
+- Usa la imagen `docker.elastic.co/kibana/kibana:8.9.0`.
+- Expone el puerto `5601` para la visualización de datos de Elasticsearch.
+
+### Volúmenes y Redes:
+- **Volúmenes**: `db_data` para MySQL y `es_data` para Elasticsearch.
+- **Red**: `app_network` para comunicación interna entre los servicios.
 
 ## Correcta implementación y ejecución del test para validar el funcionamiento del clúster de contenedores
