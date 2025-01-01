@@ -63,7 +63,7 @@ jobs:
 
       - name: Start necessary containers for integration tests
         run: |
-          docker-compose -f docker-compose.integration.yml up -d
+          docker-compose -f integration/docker-compose.integration.yml up -d
 
       - name: Wait for containers to be ready
         run: |
