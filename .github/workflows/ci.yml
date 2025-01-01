@@ -61,13 +61,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y docker-compose
 
+      - name: Verify docker-compose file location
+        run: |
+          echo "Checking for docker-compose.integration.yml"
+          pwd
+          ls -R
+
       - name: Start necessary containers for integration tests
         run: |
           docker-compose -f integration/docker-compose.integration.yml up -d
 
       - name: Wait for containers to be ready
         run: |
-          # Asegúrate de ajustar esto para tus servicios específicos
           until curl -s http://localhost:3000/; do
             sleep 1
           done
@@ -77,4 +82,4 @@ jobs:
 
       - name: Stop containers
         run: |
-          docker-compose -f docker-compose.integration.yml down
+          docker-compose -f integration/docker-compose.integration.yml down
