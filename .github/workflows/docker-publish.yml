@@ -13,16 +13,16 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Verify Frontend Dockerfile Location
+      - name: Verify Repository Structure
         run: |
-          echo "Checking for dockerfile.frontend"
+          echo "Listing repository structure for debugging:"
           ls -R
 
       - name: Log in to GitHub Container Registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker Image for Frontend
-        run: docker build -f frontend/dockerfile.frontend -t ghcr.io/${{ github.actor }}/starsbar-frontend:latest .
+        run: docker build -f dockerfile.frontend -t ghcr.io/${{ github.actor }}/starsbar-frontend:latest .
 
       - name: Push Docker Image for Frontend
         run: docker push ghcr.io/${{ github.actor }}/starsbar-frontend:latest
@@ -34,16 +34,16 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Verify Backend Dockerfile Location
+      - name: Verify Repository Structure
         run: |
-          echo "Checking for dockerfile.backend"
+          echo "Listing repository structure for debugging:"
           ls -R
 
       - name: Log in to GitHub Container Registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker Image for Backend
-        run: docker build -f backend/dockerfile.backend -t ghcr.io/${{ github.actor }}/starsbar-backend:latest .
+        run: docker build -f dockerfile.backend -t ghcr.io/${{ github.actor }}/starsbar-backend:latest .
 
       - name: Push Docker Image for Backend
         run: docker push ghcr.io/${{ github.actor }}/starsbar-backend:latest
