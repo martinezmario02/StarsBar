@@ -1,28 +1,4 @@
 services:
-  # app:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #   container_name: starsbar
-  #   volumes:
-  #     - ./backend:/usr/src/backend
-  #     - ./app:/usr/src/frontend
-  #   ports:
-  #     - "3000:3000" # Backend
-  #     - "5173:5173" # Frontend
-  #   environment:
-  #     DB_HOST: db
-  #     DB_USER: mariocc
-  #     DB_PASSWORD: mariocc
-  #     DB_DATABASE: starsbar
-  #     LOGSTASH_HOST: logstash
-  #     LOGSTASH_PORT: 5044
-  #   depends_on:
-  #     - db
-  #     - logstash
-  #   entrypoint: ["sh", "-c", "until nc -z -v -w60 db 3306; do echo 'Waiting for MySQL...'; sleep 5; done; node /usr/src/backend/server.js"]
-  #   networks:
-  #     - app_network
   backend:
     build:
       context: .

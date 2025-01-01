@@ -790,3 +790,53 @@
 {"level":"error","message":"Error al registrar usuario por correo ya registrado.","timestamp":"2024-12-27T18:56:57.658Z"}
 {"level":"info","message":"Petición POST a /api/register recibida.","timestamp":"2024-12-27T18:56:57.662Z"}
 {"level":"error","message":"Error al buscar usuario: Simulated error","timestamp":"2024-12-27T18:56:57.662Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T16:40:11.394Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T16:40:12.581Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T16:42:39.473Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T16:42:39.474Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T16:44:44.709Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T16:44:44.710Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T17:14:45.677Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T17:14:45.678Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:28:06.255Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:28:10.584Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:33:07.325Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:33:07.326Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:37:06.232Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:37:06.234Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:41:28.800Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:41:28.802Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:43:45.499Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:43:45.502Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:47:49.891Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:47:49.893Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:49:47.042Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:49:47.044Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2025-01-01T18:49:54.779Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2025-01-01T18:49:55.201Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2025-01-01T18:49:55.230Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2025-01-01T18:49:55.749Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:49:59.237Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:49:59.238Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:56:05.756Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:56:05.758Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2025-01-01T18:56:09.405Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2025-01-01T18:56:09.406Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2025-01-01T18:56:09.414Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2025-01-01T18:56:09.552Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T18:56:12.292Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T18:56:12.293Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T19:15:36.178Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T19:15:36.180Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T19:15:38.538Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T19:15:38.539Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T19:15:41.042Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T19:15:41.042Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1 recibida.","timestamp":"2025-01-01T19:15:41.979Z"}
+{"level":"info","message":"Consulta a la información del restaurante realizada correctamente.","timestamp":"2025-01-01T19:15:41.980Z"}
+{"level":"info","message":"Petición GET a /api/restaurants/1/reviews recibida.","timestamp":"2025-01-01T19:15:41.988Z"}
+{"level":"info","message":"Consulta a las valoraciones del restaurante realizada correctamente.","timestamp":"2025-01-01T19:15:41.990Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T19:15:44.361Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T19:15:44.363Z"}
+{"level":"info","message":"Petición GET a /api/restaurants recibida.","timestamp":"2025-01-01T19:16:48.620Z"}
+{"level":"info","message":"Consulta a los restaurantes realizada correctamente.","timestamp":"2025-01-01T19:16:48.621Z"}
