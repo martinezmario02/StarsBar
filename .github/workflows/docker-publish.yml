@@ -9,16 +9,17 @@ jobs:
   build-and-push-frontend:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-      packages: write
-
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
+
+      - name: Verify Repository Structure
+        run: |
+          echo "Listing repository structure for debugging:"
+          ls -R
 
       - name: Log in to GitHub Container Registry
-        run: echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker Image for Frontend
         run: docker build -f Dockerfile.frontend -t ghcr.io/${{ github.actor }}/starsbar-frontend:latest .
@@ -29,16 +30,17 @@ jobs:
   build-and-push-backend:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-      packages: write
-
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
+
+      - name: Verify Repository Structure
+        run: |
+          echo "Listing repository structure for debugging:"
+          ls -R
 
       - name: Log in to GitHub Container Registry
-        run: echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker Image for Backend
         run: docker build -f Dockerfile.backend -t ghcr.io/${{ github.actor }}/starsbar-backend:latest .

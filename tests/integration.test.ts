@@ -50,11 +50,4 @@ describe('Test de servicios del clúster de contenedores', () => {
       .expect(200);
     expect(response.statusCode).toBe(200); 
   });
-
-  // it('Debería estar corriendo Logstash', async () => {
-  //   const response = await request('http://localhost:5044')
-  //     .get('/')
-  //     .expect(200);
-  //   expect(response.statusCode).toBe(200); 
-  // });
 });
