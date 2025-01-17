@@ -1,2 +1,2 @@
-web: node server.js
-web: npm run dev
+web: cd backend && node server.js
+web: cd ../app && npm run dev
