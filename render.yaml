@@ -1,13 +1,11 @@
 services:
-  - type: private_service
+  - type: web
     name: mysql-service
     env: docker
     dockerfilePath: ./Dockerfile.mysql
-    autoDeploy: true
-    plan: standard
-    disk:
-      name: mysql_data
-      sizeGB: 5
+    ports:
+      - 3306
+      - 8080
     envVars:
       - key: MYSQL_ROOT_PASSWORD
         value: root
@@ -17,4 +15,3 @@ services:
         value: mariocc
       - key: MYSQL_DATABASE
         value: starsbar
-    healthCheckPath: ""
