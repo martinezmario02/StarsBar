@@ -1,13 +1,13 @@
 FROM mysql:8.0
 
-# Configura las variables de entorno
+# Configura las variables de entorno para MySQL
 ENV MYSQL_ROOT_PASSWORD=root
 ENV MYSQL_USER=mariocc
 ENV MYSQL_PASSWORD=mariocc
 ENV MYSQL_DATABASE=starsbar
 
 # Instala herramientas para un servidor HTTP básico
-RUN apt-get update && apt-get install -y curl && apt-get clean
+RUN apk add --no-cache curl
 
-# Agrega un script para iniciar MySQL y un servidor HTTP
-CMD ["sh", "-c", "mysqld & while true; do echo 'HTTP OK' | nc -l -p 8080; done
+# Agrega un script para iniciar MySQL y un servidor HTTP básico
+CMD ["sh", "-c", "mysqld & while true; do echo 'HTTP OK' | nc -l -p 8080; done"]
