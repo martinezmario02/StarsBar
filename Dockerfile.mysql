@@ -1,4 +1,11 @@
-FROM mysql:8.0
+FROM debian:bullseye-slim
+
+# Instala MySQL Server y herramientas necesarias
+RUN apt-get update && apt-get install -y \
+    mysql-server \
+    curl \
+    netcat \
+    && apt-get clean
 
 # Configura las variables de entorno para MySQL
 ENV MYSQL_ROOT_PASSWORD=root
@@ -6,8 +13,11 @@ ENV MYSQL_USER=mariocc
 ENV MYSQL_PASSWORD=mariocc
 ENV MYSQL_DATABASE=starsbar
 
-# Instala herramientas para un servidor HTTP básico
-RUN apk add --no-cache curl
+# Copia los scripts de inicialización si tienes alguno
+# ADD ./scripts /docker-entrypoint-initdb.d/
 
-# Agrega un script para iniciar MySQL y un servidor HTTP básico
+# Configura los puertos
+EXPOSE 3306 8080
+
+# Comando para iniciar MySQL y un servidor HTTP básico
 CMD ["sh", "-c", "mysqld & while true; do echo 'HTTP OK' | nc -l -p 8080; done"]
