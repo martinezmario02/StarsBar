@@ -1,0 +1,9 @@
+FROM mysql:8.0
+
+# Configura las variables necesarias para la base de datos
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_USER=mariocc
+ENV MYSQL_PASSWORD=mariocc
+ENV MYSQL_DATABASE=starsbar
+
+EXPOSE 3306

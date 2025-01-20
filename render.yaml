@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: mysql-service
+    env: docker
+    dockerfilePath: ./Dockerfile.mysql
+    autoDeploy: true
+    plan: standard
+    disk:
+      name: mysql_data
+      sizeGB: 5
+    envVars:
+      - key: MYSQL_ROOT_PASSWORD
+        value: root
+      - key: MYSQL_USER
+        value: mariocc
+      - key: MYSQL_PASSWORD
+        value: mariocc
+      - key: MYSQL_DATABASE
+        value: starsbar
