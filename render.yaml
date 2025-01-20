@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: private_service
     name: mysql-service
     env: docker
     dockerfilePath: ./Dockerfile.mysql
@@ -17,3 +17,4 @@ services:
         value: mariocc
       - key: MYSQL_DATABASE
         value: starsbar
+    healthCheckPath: ""
