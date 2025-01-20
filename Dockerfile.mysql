@@ -1,7 +1,13 @@
 FROM debian:bullseye-slim
 
-# Instala MySQL Server y herramientas necesarias
-RUN apt-get update && apt-get install -y \
+# Configura los repositorios de MySQL
+RUN apt-get update && apt-get install -y gnupg wget lsb-release && \
+    wget https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb && \
+    dpkg -i mysql-apt-config_0.8.26-1_all.deb && \
+    apt-get update
+
+# Instala MySQL Server y herramientas adicionales
+RUN apt-get install -y \
     mysql-server \
     curl \
     netcat \
@@ -12,9 +18,6 @@ ENV MYSQL_ROOT_PASSWORD=root
 ENV MYSQL_USER=mariocc
 ENV MYSQL_PASSWORD=mariocc
 ENV MYSQL_DATABASE=starsbar
-
-# Copia los scripts de inicialización si tienes alguno
-# ADD ./scripts /docker-entrypoint-initdb.d/
 
 # Configura los puertos
 EXPOSE 3306 8080
