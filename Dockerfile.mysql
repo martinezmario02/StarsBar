@@ -1,29 +1,17 @@
-FROM debian:bullseye-slim
+# Usa la imagen oficial de MySQL
+FROM mysql:8.0
 
-# Instala herramientas necesarias
-RUN apt-get update && apt-get install -y gnupg wget lsb-release curl && \
-    # Añadir la clave pública de MySQL
-    wget https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb && \
-    dpkg -i mysql-apt-config_0.8.26-1_all.deb && \
-    # Agregar la clave pública
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C && \
-    apt-get update
-
-# Instala MySQL Server y herramientas adicionales
-RUN apt-get install -y \
-    mysql-server \
-    curl \
-    netcat \
-    && apt-get clean
-
-# Configura las variables de entorno para MySQL
-ENV MYSQL_ROOT_PASSWORD=root
+# Configura el entorno para el contenedor
+ENV MYSQL_ROOT_PASSWORD=root_password
+ENV MYSQL_DATABASE=starsbar
 ENV MYSQL_USER=mariocc
 ENV MYSQL_PASSWORD=mariocc
-ENV MYSQL_DATABASE=starsbar
 
-# Configura los puertos
-EXPOSE 3306 8080
+# Expon el puerto 3306 para acceder a MySQL
+EXPOSE 3306
 
-# Comando para iniciar MySQL y un servidor HTTP básico
-CMD ["sh", "-c", "mysqld & while true; do echo 'HTTP OK' | nc -l -p 8080; done"]
+# Volumen para persistir los datos
+VOLUME /var/lib/mysql
+
+# Comando por defecto para iniciar el contenedor de MySQL
+CMD ["mysqld"]
